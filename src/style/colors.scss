@@ -1,0 +1,269 @@
+//Vars Colors
+$main: rgba(20, 102, 120, 1);
+$primary: rgba(39, 123, 140, 1);
+$support1: rgb(240 242 245);
+$support2: rgba(221, 14, 28, 1);
+$dark-main: rgb(44 54 64);
+$light-black: rgba(139, 145, 152, 1);
+$light-main: rgba(58, 71, 84, 1);
+$dark-black: rgba(51, 51, 51, 1);
+$grey: rgba(105, 105, 115, 1);
+$hover-main: rgba(39, 123, 140, 1);
+$light-blue: rgba(219, 232, 242, 1);
+$light-support1: rgba(247, 245, 245, 0.8);
+$green: rgba(80, 173, 85, 1);
+$white-sup: #F8F8F8;
+$white: #fff;
+$red: #FA3E6B;
+$dark: #022E46;
+$light-red: #C95656;
+$yellow: rgba(253, 194, 45, 1);
+$light-white: rgba(230, 230, 230, 1);
+$blue: #0d6efd;
+$light-grey: #707070;
+$dark-grey: #495057;
+$black: #0000;
+$dark-blue: #24B5B9;
+
+// START === Background Color
+.bg-Inherit {
+    background-color: inherit;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-main {
+    background-color: $main !important;
+}
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-white-sup {
+    background-color: $white-sup !important;
+}
+
+.bg-dark-main {
+    background-color: $dark-main !important;
+}
+
+.bg-light-main {
+    background-color: $light-main !important;
+}
+
+.bg-support1 {
+    background-color: $support1 !important;
+}
+
+.bg-support2 {
+    background-color: $support2 !important;
+}
+
+.bg--white {
+    background-color: $white !important;
+}
+
+.bg-light-white {
+    background-color: $light-white !important;
+}
+
+.bg-light-grey {
+    background-color: $light-grey !important;
+}
+
+.bg-yellow {
+    background-color: $yellow !important;
+}
+
+.bg-green {
+    background-color: $green !important;
+}
+
+.bg-grey {
+    background-color: $grey !important;
+}
+
+.bg-dark {
+    background-color: $dark !important;
+}
+
+.bg-light-black {
+    background-color: $light-black !important;
+}
+
+.bg-light-blue {
+    background-color: $light-blue !important;
+}
+
+.bg-light-support1 {
+    background-color: $light-support1 !important;
+}
+
+// END === Background Color
+// START === Text Color
+.text-main-color {
+    color: $main !important;
+}
+
+.text-white-sup-color {
+    color: $white-sup !important;
+}
+
+.text-support1-color {
+    color: $support1 !important;
+}
+
+.text-support2-color {
+    color: $support2 !important;
+}
+
+.text-white-color {
+    color: $white !important;
+}
+
+.text-light-white {
+    color: $light-white !important;
+}
+
+.text-light-black-color {
+    color: $light-black !important;
+}
+
+.text-red-color {
+    color: $red !important;
+}
+
+.text-light-red-color {
+    color: $light-red !important;
+}
+
+.text-light-main {
+    color: $light-main !important;
+}
+
+
+.text-dark-main {
+    color: $dark-main !important;
+}
+
+.text-blue-color {
+    color: $blue !important;
+}
+
+.text-yellow {
+    color: $yellow !important;
+}
+
+.text-green {
+    color: $green !important;
+}
+
+.text-grey {
+    color: $grey !important;
+}
+
+.text-light-grey {
+    color: $light-grey !important;
+}
+
+.text-dark-black {
+    color: $dark-black !important;
+}
+
+.text-light-black {
+    color: $light-black !important;
+}
+
+.text-light-blue {
+    color: $light-blue !important;
+}
+
+.text-dark-color {
+    color: $dark !important;
+}
+
+.text-black {
+    color: $black !important;
+}
+
+.text-dark-grey {
+    color: $dark-grey !important;
+}
+
+.text-grey-color {
+    color: $grey !important;
+}
+
+.text-dark-blue {
+    color: $dark-blue !important;
+}
+
+// END === Text Color
+
+//backgrounds with opacity
+.bg-support2-opacity-10 {
+    background-color: rgb(59, 89, 118, 0.1);
+}
+
+.bg-main-opacity-10 {
+    background-color: rgba(30, 170, 173, 0.1);
+}
+
+.bg-main-10 {
+    background-color: rgba($color: $main, $alpha: 0.1);
+}
+
+.bg-support2-opacity-100 {
+    background-color: rgb(2, 46, 70)
+}
+
+.bg-light-blue-1 {
+    background-color: rgba($color: $light-blue, $alpha: 0.1)
+}
+
+.bg-support1-01 {
+    background-color: rgba($color: $support1, $alpha: 0.1)
+}
+
+// background with gradient
+.bg-main-gredient {
+    background: linear-gradient(93.25deg, #24B5B9 3.34%, #657FBF 98.45%);
+}
+
+////hover background
+.hover-bg-primary:hover {
+    background-color: $primary !important;
+}
+
+.hover-bg-main:hover {
+    background-color: $hover-main !important;
+}
+
+.hover-bg-support1:hover {
+    background-color: $support1 !important;
+}
+
+.hover-bg-white:hover {
+    background-color: $white !important;
+}
+
+
+////hover color
+.hover-color-main:hover {
+    color: $primary !important;
+}
+
+.hover-color-support1:hover {
+    color: $support1 !important;
+}
+
+.hover-color-main:hover {
+    color: $main !important;
+}
+
+.hover-text-color-main:hover {
+    color: $hover-main !important;
+}

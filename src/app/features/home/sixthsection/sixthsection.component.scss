@@ -1,0 +1,9 @@
+.plus {
+    opacity: 0;
+    transition: all .3s;
+    z-index: 3;
+}
+
+a:hover .plus {
+    opacity: 1 !important;
+}

@@ -1,0 +1,44 @@
+<div class="sixth_section bg-light-blue p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- start left part-->
+            <div class="col-4 px-3">
+                <div class="block">
+                    <div class="block-content pt-5">
+                        <h6
+                            class="font-ExtraBold-s16 px-2 py-1 bg-main d-inline-block text-support1-color text-uppercase mb-3">
+                            Inspiration
+                        </h6>
+                        <h2 class="mb-3 font-ExtraBold-s30 text-dark-black">#lookbook</h2>
+                        <p>Create any imaginable grid layout combinations with rows columns and modules via the all new
+                            and powerful Journal Page Builder.</p>
+                    </div>
+                    <div class="block-footer mt-4 pb-5">
+                        <a class="text-uppercase text-grey font-Regular-s14 px-3 py-2 Border-dark-grey hover-bg-white"
+                            href="">
+                            see all products
+                            <i class="fa-solid fa-arrow-right font-Regular-s12"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end left part-->
+            <!-- start right part-->
+            <div class="col-8 px-3">
+                <!-- start row -->
+                <div class="row pt-5">
+                    <div *ngFor="let item of items" class="col-2 p-0  p-1">
+                        <a class="over-hidden position-relative d-flex">
+                            <div class="layer position-absolute w-100 h-100"></div>
+                            <i
+                                class="plus middle position-absolute fa-solid fa-plus text-white-color font-Bold-s32"></i>
+                            <i class="{{item.img}} img-scale img-Background-Cover d-flex w-100 img-s120"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end right part-->
+        </div>
+    </div>
+</div>

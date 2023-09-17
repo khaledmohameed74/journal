@@ -1,0 +1,37 @@
+<div class="bg-light-main">
+    <div class="container-fluid py-4">
+        <a href="" class="text-uppercase mb-3 font-Bold-s18 text-white-color Border-B-main pb-2">Most Viewed</a>
+        <div class="row mt-4 pb-3">
+            <div class="col-6 col-md-3 px-3" *ngFor="let view of viewos ">
+                <div class="proudct bg-white py-1 row rounded">
+                    <a class="col-3 p-0" href="">
+                        <i class="{{view.img}} w-100 h-100 imgpro d-flex image w-25 img-Background-Contain"></i>
+                    </a>
+                    <div class="caption col-9 d-flex flex-column">
+                        <span
+                            class="font-Bold-s14 overflow-hidden text-main-color hover-color-main">{{view.name}}</span>
+                        <span class="font-Regular-s14 text-grey">{{view.price}}</span>
+                        <ul class="d-flex align-items-center gap-3 p-0">
+                            <li>
+                                <a href="">
+                                    <i class="{{view.hearticon}} text-grey"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="{{view.shoppingicon}} text-grey"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="{{view.compareticon}}e text-grey"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="fifth_section mt-4 pt-4 position-relative">
+    <div class="container-fluid py-4 text-center">
+        <!-- start title of section -->
+        <div class="title_module py-4 position-relative z-index-3">
+            <h3 class="text-white-color font-ExtraBold-s33">What are people saying</h3>
+            <div class="title-divider bg-main d-block"></div>
+            <p class="text-light-white font-Regular-s16">Super flexible Testimonials module, just one out of more
+                than 30 extensions
+                included in Journal 3.
+            </p>
+        </div>
+        <!-- start title of section -->
+        <!-- start row -->
+        <div class="row carsoul">
+            <owl-carousel-o [options]="customOptions">
+                <!-- start column -->
+                <ng-container *ngFor="let block of blocks" class="col-md-4">
+                    <ng-template carouselSlide [id]="block.id">
+                        <div class="module-box position-relative px-3">
+                            <div class="bg-support1 h-100 p-3 d-flex flex-column border-f-radius-s10">
+                                <i
+                                    class="fa-solid fa-quote-left font-ExtraBold-s60 module-icon text-support2-color mb-2"></i>
+                                <p class="p-0">{{block.content}}</p>
+                                <p class="module-footer font-Bold-s16 text-dark-black">{{block.footer}}</p>
+                            </div>
+                        </div>
+                    </ng-template>
+
+
+                </ng-container>
+                <!-- end column -->
+            </owl-carousel-o>
+        </div>
+        <!-- end row -->
+    </div>
+    <div class="cover img-ashtray-book img-Background-fixed h-100 w-100 position-absolute top-0"></div>
+
+
+</div>

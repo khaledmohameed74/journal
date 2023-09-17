@@ -1,0 +1,167 @@
+<!-- start middlebar -->
+<nav class="bg--white navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <!--start brand -->
+        <a class="navbar-brand me-5" href="#">
+            <i class="d-flex img-header img-Background-Contain"></i>
+        </a>
+        <!--end brand -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Start Serach Form -->
+        <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
+            <form class="d-flex w-100">
+                <button
+                    class="drop max-content position-relative d-flex justify-content-center align-items-center btn bg-main border-l-radius-s20 text-white-color d-flex align-items-center hover-bg-main"
+                    type="submit">
+                    All
+                    <i class="fa-solid fa-caret-down ms-2 font-Bold-s12"></i>
+                    <!-- START === Dropdown menu -->
+                    <span class="dropdown-clip all-clip bg-main position-absolute z-index-3"></span>
+                    <ul
+                        class="all-memu dropdown bg-main p-0 d-flex flex-column mt-3 position-absolute z-index-3 top-100">
+                        <li *ngFor="let item of menu" class="px-3 py-2 hover-bg-primary text-start">
+                            <a class="text-white-color font-Regular-s13" href="">{{item.title}}</a>
+                        </li>
+
+                    </ul>
+                    <!-- END === Dropdown menu -->
+                </button>
+                <input class="bg-support1 form-control me-0 rounded-0" type="search" placeholder="Search here"
+                    aria-label="Search">
+                <button class="btn bg-main border-r-radius-s20 hover-bg-main" type="submit">
+                    <i class="fa-solid fa-magnifying-glass text-white-color"></i>
+                </button>
+            </form>
+        </div>
+        <!-- End Serach Form -->
+
+        <!-- Start Right Side -->
+        <ul class="navbar-nav mb-2 mb-lg-0 ms-4">
+            <li class="drop nav-item position-relative d-flex justify-content-center align-items-center ms-2">
+                <a class="nav-link d-flex align-items-center hover-color-main" href="#">
+                    <i class="text-light-grey fa-solid fa-user-plus me-2 font-Regular-s28"></i>
+                    <span class="font-Bold-s14">Accounts
+                        <p class="m-0 font-Regular-s10 ">Login / Register</p>
+                    </span>
+                </a>
+                <!-- START === Dropdown menu -->
+                <span class="dropdown-clip  bg-main position-absolute z-index-3"></span>
+                <ul class="j-meu dropdown bg-main p-0 d-flex flex-column mt-2 position-absolute z-index-3 top-100">
+                    <li class="px-3 py-2 hover-bg-primary">
+                        <a class="text-white-color font-Regular-s13" href="">
+                            <i class="fa-regular fa-circle-right me-2"></i>
+                            <span>Login</span>
+                        </a>
+                    </li>
+                    <li class="px-3 py-2 hover-bg-primary">
+                        <a class="text-white-color font-Regular-s13" href="">
+                            <i class="fa-solid fa-pen me-2"></i>
+                            <span>Register</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- END === Dropdown menu -->
+            </li>
+            <li class="nav-item ms-2">
+                <a class="nav-link d-flex align-items-center hover-color-main" href="#">
+                    <i class="fa-regular text-light-grey fa-heart me-3 font-Regular-s28 position-relative">
+                        <span
+                            class="count position-absolute font-Regular-s12 bg-support2 text-white-color rounded-circle text-center">
+                            0
+                        </span>
+                    </i>
+                    <span class="font-Bold-s14">Wishlist
+                        <p class="m-0 font-Regular-s10 ">Edit Your Wishlist</p>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item ms-2">
+                <a class="nav-link d-flex align-items-center hover-color-main" href="#">
+                    <i
+                        class="text-light-grey fa-solid fa-right-left me-2 font-Regular-s14 Border-dark-grey border-f-radius-s50 p-2 position-relative">
+                        <span
+                            class="count position-absolute font-Regular-s12 bg-support2 text-white-color rounded-circle text-center">
+                            0
+                        </span>
+                    </i>
+                    <span class="font-Bold-s14">Compare
+                        <p class="m-0 font-Regular-s10 ">Product Comparison</p>
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <!-- End Right Side -->
+    </div>
+</nav>
+<!-- end middlebar -->
+<!-- start downbar -->
+<nav class="navbar navbar-expand-lg bg--white py-0 Border-T-grey Border-B-grey">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse flex-grow-1 justify-content-between" id="navbarTogglerDemo02">
+            <!-- start menu1 -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase font-Bold-s14 text-dark-black hover-color-main"
+                        href="">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase font-Bold-s14 text-dark-black hover-color-main"
+                        href="">MegaMenu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase font-Bold-s14 text-dark-black hover-color-main"
+                        href="">Multilevel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase font-Bold-s14 text-dark-black hover-color-main" href="">Brands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase font-Bold-s14 text-support2-color hover-color-main"
+                        href="">Specials</a>
+                </li>
+            </ul>
+            <!-- end menu1 -->
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- start menu2 -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase font-Bold-s14 text-dark-black hover-color-main"
+                            href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase font-Bold-s14 text-dark-black hover-color-main"
+                            href="">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase font-Bold-s14 text-dark-black hover-color-main"
+                            href="">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase font-Bold-s14 text-dark-black hover-color-main"
+                            href="">Blog</a>
+                    </li>
+                </ul>
+                <!-- end menu1 -->
+                <!-- start shopping card -->
+                <div class="shopping_card">
+                    <a class="d-flex align-items-center ps-3 ms-3 Border-L-grey hover-bg-support1" href="">
+                        <span class="text-light-grey">0 item(s) - $0.00</span>
+                        <span
+                            class="shopping_bag position-relative d-flex justify-content-center align-items-center ms-4 bg-main text-white-color"><i
+                                class=" fa-solid fa-bag-shopping font-Regular-s24"></i>
+                            <span
+                                class="count position-absolute font-Regular-s12 bg-support2 text-white-color rounded-circle text-center">
+                                0
+                            </span></span>
+                    </a>
+                </div>
+                <!-- end shopping card -->
+            </div>
+
+        </div>
+    </div>
+</nav>
+<!-- end downbar -->

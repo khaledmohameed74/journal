@@ -1,0 +1,23 @@
+<div class="second_section p-4 bg-support1">
+    <div class="container-fluid my-5">
+        <h3 class="text-dark-black font-ExtraBold-s22 my-4">Top Categories</h3>
+        <div class="d-flex align-items-center justify-content-between mt-2">
+            <!-- start category -->
+            <div *ngFor="let category of categories" class="topcat">
+                <a class="over-hidden position-relative d-flex" href="">
+                    <i class="{{category.img}}  img-scale img-Background-Cover img-topcategories-s200 w-100 d-flex"></i>
+                    <a class="details banner_caption middle-bottom position-absolute d-flex text-uppercase mb-3 px-2 py-1 opacity-09 bg-white text-dark-black font-ExtraBold-s14"
+                        href="">{{category.name}}</a>
+                </a>
+                <div class="d-flex justify-content-end align-items-center">
+                    <a class="over-hidden font-Regular-s12 text-dark-black py-2 align-items-center d-flex hover-color-main"
+                        href="">
+                        <p class="m-0">{{category.more}}</p>
+                        <i class="fa-solid fa-arrow-right-long font-Regular-s12 ms-1"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- end category -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+.icoon {
+    width: 12px;
+    height: 12px;
+}
+
+.plus {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.Product:hover .plus {
+    opacity: 1;
+}
+
+.proudct_card {
+    bottom: -10px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.Product:hover .proudct_card {
+    opacity: 1;
+    bottom: 0;
+}
+
+.extra {
+    bottom: -25px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.Product:hover .extra {
+    bottom: 0;
+    opacity: 1;
+}

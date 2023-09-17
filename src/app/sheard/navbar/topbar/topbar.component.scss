@@ -1,0 +1,12 @@
+.currency::after {
+    content: "ïƒš";
+    font-family: icomoon !important;
+    font-size: 11px !important;
+    position: relative;
+    padding: 0 5px;
+    display: inline-block;
+    margin-left: auto;
+    transform: rotate(90deg);
+    margin-top: 2px;
+    font-weight: 400 !important;
+}

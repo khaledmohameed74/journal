@@ -1,0 +1,156 @@
+<div class="fourth_section">
+    <div class="container-fluid my-5">
+        <div>
+            <!-- start menu category -->
+            <ul class="Species d-flex align-items-center gap-3 ps-0 py-3">
+                <li>
+                    <a class="font-ExtraBold-s14 text-light-black text-uppercase" href="">Latest</a>
+                </li>
+                <li>
+                    <a class="font-ExtraBold-s14 text-light-black text-uppercase" href="">Bestsellers</a>
+                </li>
+                <li>
+                    <a class="font-ExtraBold-s14 text-light-black text-uppercase" href="">Best Rated</a>
+                </li>
+                <li>
+                    <a class="font-ExtraBold-s14 text-light-black text-uppercase" href="">Specials</a>
+                </li>
+                <li>
+                    <a class="font-ExtraBold-s14 text-light-black text-uppercase" href="">All Products</a>
+                </li>
+            </ul>
+            <!-- end menu category -->
+            <div class="row carsoul position-relative">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-container *ngFor="let Proudct of Proudcts" class="col-md-3 px-4">
+                        <ng-template carouselSlide [id]="Proudct.id">
+                            <div class="Product">
+                                <a class=" position-relative cursor-click">
+                                    <!-- start proudct img -->
+                                    <i
+                                        class="{{Proudct.img}} bg-support1 img-Background-Cover w-100 img-s300 d-flex"></i>
+                                    <!-- end proudct img -->
+                                    <!-- start about proudct -->
+                                    <div
+                                        class="about d-flex flex-column gap-1 p-1 position-absolute top-0 end-0 font-Bold-s12">
+                                        <span class="text-uppercase py-1 px-2 bg-main text-white-color ">New</span>
+                                        <span class="text-uppercase py-1 px-2 bg-yellow text-dark-color">Hot</span>
+                                    </div>
+                                    <!-- end about proudct -->
+                                    <!-- start plus icon -->
+                                    <div class="menu-icons quickview-button position-absolute middle">
+                                        <div class="cursor-click icon position-relative d-flex justify-content-center">
+                                            <p
+                                                class="icon_name bg-main position-absolute m-0 text-white-color p-1 font-Bold-s12 d-flex justify-content-center">
+                                                Quickview
+                                                <span class="clip bg-main position-absolute"></span>
+                                            </p>
+
+                                            <i
+                                                class="fa-solid fa-plus plus d-flex justify-content-center align-items-center bg-light-main hover-bg-main cursor-click text-white-color border-f-radius-s50 "></i>
+                                        </div>
+                                    </div>
+                                    <!-- end plus icon -->
+                                    <!-- start proudct card -->
+                                    <div
+                                        class="proudct_card position-absolute d-flex align-items-center gap-2 bg-light-main px-2 py-1">
+                                        <!-- start proudct number -->
+                                        <div class="sub d-flex align-items-center gap-2">
+                                            <div class="w-25 position-relative d-flex">
+                                                <input type="text" value="1" data-minimum="1"
+                                                    class="w-100 py-1 font-Regular-s13 text-light-grey text-center">
+                                                <div class=" d-flex flex-column align-items-center justify-content-around bg-support1 text-light-grey
+                                            font-Regular-s13 w-50">
+                                                    <i
+                                                        class="fa fa-angle-up hover-bg-main hover-color-support1 w-100 h-100 text-center cursor-click"></i>
+                                                    <i
+                                                        class="fa fa-angle-down hover-bg-main hover-color-support1 w-100 h-100 text-center cursor-click"></i>
+                                                </div>
+                                            </div>
+
+                                            <a class="btn_card text-white-color font-Regular-s13 p-2 hover-bg-main"
+                                                href="">
+                                                <i class="fa-solid fa-bag-shopping me-2"></i>
+                                                <span class="text-uppercase">Add to Cart</span>
+                                            </a>
+
+                                        </div>
+                                        <!-- end proudct number -->
+                                        <!-- start love and comare -->
+                                        <ul class="menu-icons d-flex gap-4 m-0 me-2">
+                                            <li
+                                                class="cursor-click icon position-relative d-flex justify-content-center">
+                                                <p
+                                                    class="icon_name z-index-3 bg-main position-absolute m-0 text-white-color p-1 font-Bold-s12 d-flex justify-content-center">
+                                                    Add to Wish List
+                                                    <span class="clip bg-main position-absolute"></span>
+                                                </p>
+                                                <a>
+                                                    <i
+                                                        class="fa-regular fa-heart text-support2-color hover-text-color-main cursor-click"></i>
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="cursor-click icon position-relative d-flex justify-content-center">
+                                                <p
+                                                    class="icon_name z-index-3 bg-main position-absolute m-0 text-white-color p-1 font-Bold-s12 d-flex justify-content-center">
+                                                    Compare this Product
+                                                    <span class="clip bg-main position-absolute"></span>
+                                                </p>
+                                                <a>
+                                                    <i
+                                                        class="fa-solid fa-arrows-rotate text-white-color hover-text-color-main cursor-click"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- end love and compare -->
+                                    </div>
+                                    <!-- end proudct card -->
+                                </a>
+
+                                <!-- start proudct information -->
+                                <div
+                                    class="caption position-relative d-flex justify-content-center flex-column align-items-center">
+                                    <!-- start proudct state -->
+                                    <p class="states bg-light-support1 cursor-click w-100 text-center m-0 p-2 text-grey font-Regular-s16 text-underline"
+                                        href="">{{Proudct.stat}}</p>
+                                    <!-- end proudct state -->
+                                    <!-- start proudct name -->
+                                    <p class="name text-center p-1 m-0 cursor-click font-ExtraBold-s16 text-light-main hover-color-main"
+                                        href="">{{Proudct.name}}</p>
+                                    <!-- end proudct name -->
+                                    <!-- start proudct price -->
+                                    <p class="font-Regular-s16 text-grey p-0 m-0">{{Proudct.price}}</p>
+                                    <!-- end proudct price -->
+                                    <!-- Start Buy or Ask -->
+                                    <div class="extra d-flex text-center position-absolute bg-white">
+                                        <!-- Start Buy -->
+                                        <div class="font-Regular-s12 me-2">
+                                            <i
+                                                class="fa-solid fa-dollar-sign border-f-radius-s50 Border-green text-green font-ExtraBold-s10 me-1 icoon"></i>
+                                            <span class="text-light-main hover-text-color-main m-0 p-0">Buy Now</span>
+                                        </div>
+
+                                        <!-- End Buy -->
+                                        <!-- Start Ask -->
+                                        <div class="font-Regular-s12">
+                                            <i
+                                                class="fa-solid fa-question border-f-radius-s50 Border-red text-support2-color font-ExtraBold-s10 me-1 icoon"></i>
+                                            <span class="text-light-main hover-text-color-main">Ask Question</span>
+                                        </div>
+                                        <!-- End Ask -->
+                                    </div>
+                                    <!-- end Buy or Ask -->
+                                </div>
+                            </div>
+
+                            <!-- end proudct information -->
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+
+
+            </div>
+        </div>
+    </div>
+</div>

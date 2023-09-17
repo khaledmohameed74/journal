@@ -1,0 +1,27 @@
+.menu-icons a {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+.icon_name {
+    top: -35px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .6s;
+
+}
+
+.icon_name .clip {
+    clip-path: polygon(36% 0, 46% 14%, 56% 0);
+    bottom: -50px;
+    width: 40px;
+    height: 50px;
+}
+
+.menu-icons li:hover .icon_name {
+    visibility: visible;
+    opacity: 1;
+}

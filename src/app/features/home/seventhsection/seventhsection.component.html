@@ -1,0 +1,42 @@
+<div class="seventh_section py-5">
+    <div class="container-fluid text-center">
+        <div class="title-block">
+            <h3 class="text-dark-black font-ExtraBold-s33">From the Blog</h3>
+            <div class="title-divider bg-main d-block"></div>
+        </div>
+        <div class="row carsoul position-relative py-4">
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let Blog of Blogs" class="col-4">
+                    <ng-template carouselSlide [id]="Blog.id">
+                        <a class="over-hidden position-relative d-flex flex-column" href="">
+                            <i class="{{Blog.img}} img-Background-Cover d-flex img-s200 img-scale w-100"></i>
+                            <div
+                                class="post-stats py-1 bg-light-support1 w-100 d-flex justify-content-center align-items-center position-absolute bottom-0 gap-2">
+                                <span class="author font-Regular-s12 text-grey"><i
+                                        class="fa-solid fa-user font-Bold-s12 text-dark-main me-1"></i>
+                                    {{Blog.author}}</span>
+                                <span class="comment font-Regular-s12 text-grey"><i
+                                        class="fa-solid fa-comment-dots text-dark-main font-Bold-s12 me-1"></i>{{Blog.comments}}</span>
+                                <span class="view font-Regular-s12 text-grey"><i
+                                        class="fa-solid fa-eye text-dark-main font-Bold-s12 me-1"></i>{{Blog.views}}</span>
+                            </div>
+                        </a>
+                        <div class="caption d-flex flex-column">
+                            <div class="name font-ExtraBold-s18 my-2">
+                                <a class="text-light-main hover-text-color-main" href="">{{Blog.name}}</a>
+                            </div>
+                            <div class="description text-center">
+                                <p class="p-0 mb-2">{{Blog.description}}</p>
+                            </div>
+                            <div class="button-group">
+                                <a class="btn Border-dark-grey border-f-radius-s40 text-dark-grey text-uppercase font-Regular-s13"
+                                    href="">Read More</a>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+
+    </div>
+</div>
